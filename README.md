@@ -399,27 +399,27 @@ First, you'll need a basic understanding of common principles, learning about wh
             Maintain two environments (Blue and Green) where one serves production traffic.
             Deploy new code to the idle environment and switch the traffic after testing.
             Benefits: Minimal downtime, easy rollback, and consistency across servers.
-         2. Canary Releases:
+          2. Canary Releases:
             
             Gradually roll out the new code to a small subset of servers.
             Monitor these servers closely before proceeding to a broader rollout.
             Benefits: Limits the impact of potential issues, allows for real-world testing on a small scale.
-         3. Rolling Updates:
+          3. Rolling Updates:
             
             Update servers in small batches, ensuring some servers always serve traffic.
             Monitor each batch before updating the next.
             Benefits: Continuous availability, reduced risk of full-scale failures.
-         4. Immutable Infrastructure:
+          4. Immutable Infrastructure:
             
             Create new server instances with the updated code rather than modifying existing ones.
             Replace old instances with new ones after testing.
             Benefits: Ensures all servers run the same code, eliminates configuration drift.
-         5. A/B Testing:
+          5. A/B Testing:
             
             Deploy the new code to a subset of users to compare performance with the old code.
             Gradually increase the user base as confidence in the new code grows.
             Benefits: Direct comparison of new and old code performance, user feedback before full deployment.
-         6. Feature Toggles (Flags):
+          6. Feature Toggles (Flags):
             
             Deploy new features in the codebase but keep them disabled using feature toggles.
             Gradually enable features for different user segments.
